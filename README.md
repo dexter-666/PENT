@@ -1,4 +1,4 @@
-# README — Proyecto de Tesis: Auditoría de Seguridad Web UNS
+# README —  Auditoría de Seguridad Web UNS
 
 > **⚠️ ADVERTENCIA**: Este proyecto fue realizado con autorización formal de la Vicerrectoría  
 > y el Grupo de Ingeniería de Seguridad de la Universidad Nacional del Santa (UNS).  
