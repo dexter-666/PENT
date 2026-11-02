@@ -1,0 +1,5 @@
+PHP2Shell RCE Verification Results
+Date: 2026-10-25 03:01:36
+
+https://sigea.uns.edu.pe: INFO_LEAK
+https://orcl.uns.edu.pe: INFO_LEAK

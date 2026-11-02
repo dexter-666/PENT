@@ -1,0 +1,8 @@
+{
+  "robots_/": "Disallow",
+  "robots_content": "User-agent: *\nDisallow: /",
+  "config_export": "ACCESIBLE",
+  "mysql": "PUERTO VISIBLE",
+  "apache backend": "PUERTO VISIBLE",
+  "apache": "PUERTO VISIBLE"
+}

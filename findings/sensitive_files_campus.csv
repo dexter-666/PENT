@@ -1,0 +1,51 @@
+url,path,status_code,severity,description,note,content_length,content_type,timestamp,wstg_ref
+https://campus.uns.edu.pe/.git/config,/.git/config,200,HIGH,Configuración Git expuesta — revela remotes y credenciales,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:12,WSTG-CONF-04
+https://campus.uns.edu.pe/.git/COMMIT_EDITMSG,/.git/COMMIT_EDITMSG,200,HIGH,Git commit expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:13,WSTG-CONF-04
+https://campus.uns.edu.pe/.svn/entries,/.svn/entries,200,HIGH,Repositorio SVN expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:14,WSTG-CONF-04
+https://campus.uns.edu.pe/.svn/wc.db,/.svn/wc.db,200,HIGH,Base de datos SVN expuesta,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:15,WSTG-CONF-04
+https://campus.uns.edu.pe/.hg/,/.hg/,200,HIGH,Repositorio Mercurial expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:16,WSTG-CONF-04
+https://campus.uns.edu.pe/.env.local,/.env.local,200,HIGH,Archivo .env.local con configuración sensible,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:17,WSTG-CONF-04
+https://campus.uns.edu.pe/.env.production,/.env.production,200,HIGH,Archivo .env.production con credenciales de producción,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:18,WSTG-CONF-04
+https://campus.uns.edu.pe/config.php,/config.php,200,HIGH,Archivo de configuración PHP con credenciales,ACCESIBLE SIN AUTENTICACIÓN,0,text/html; charset=utf-8,2026-10-11 01:03:19,WSTG-CONF-04
+https://campus.uns.edu.pe/config/database.yml,/config/database.yml,200,HIGH,Configuración de base de datos Ruby on Rails,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:21,WSTG-CONF-04
+https://campus.uns.edu.pe/application.properties,/application.properties,200,HIGH,Propiedades de Spring Boot con credenciales,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:22,WSTG-CONF-04
+https://campus.uns.edu.pe/settings.py,/settings.py,200,HIGH,Configuración Django con SECRET_KEY y credenciales,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:23,WSTG-CONF-04
+https://campus.uns.edu.pe/config/settings.ini,/config/settings.ini,200,HIGH,Archivo de configuración con credenciales,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:24,WSTG-CONF-04
+https://campus.uns.edu.pe/web.config,/web.config,200,HIGH,Configuración IIS/ASP.NET con información sensible,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:25,WSTG-CONF-04
+https://campus.uns.edu.pe/backup.sql,/backup.sql,200,HIGH,Backup de base de datos SQL expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:26,WSTG-CONF-04
+https://campus.uns.edu.pe/backup.zip,/backup.zip,200,HIGH,Backup comprimido expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:26,WSTG-CONF-04
+https://campus.uns.edu.pe/backup.tar.gz,/backup.tar.gz,200,HIGH,Backup tar expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:27,WSTG-CONF-04
+https://campus.uns.edu.pe/db.sql,/db.sql,200,HIGH,Volcado de base de datos expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:28,WSTG-CONF-04
+https://campus.uns.edu.pe/database.sql,/database.sql,200,HIGH,Volcado de base de datos expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:29,WSTG-CONF-04
+https://campus.uns.edu.pe/dump.sql,/dump.sql,200,HIGH,Dump de base de datos expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:30,WSTG-CONF-04
+https://campus.uns.edu.pe/site.zip,/site.zip,200,HIGH,Backup del sitio web,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:31,WSTG-CONF-04
+https://campus.uns.edu.pe/www.zip,/www.zip,200,HIGH,Backup del directorio web,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:32,WSTG-CONF-04
+https://campus.uns.edu.pe/old/,/old/,200,HIGH,Directorio con versión antigua del sitio,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:33,WSTG-CONF-04
+https://campus.uns.edu.pe/backup/,/backup/,403,INFO,Directorio de backups expuesto,Protegido (401/403) — Existe pero requiere autenticación,162,text/html,2026-10-11 01:03:34,WSTG-CONF-04
+https://campus.uns.edu.pe/debug/,/debug/,200,HIGH,Panel de depuración expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:38,WSTG-CONF-04
+https://campus.uns.edu.pe/console,/console,200,HIGH,Consola de administración web,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:39,WSTG-CONF-04
+https://campus.uns.edu.pe/actuator,/actuator,200,HIGH,"Actuator de Spring Boot expuesto (métricas, env, beans)",ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:40,WSTG-CONF-04
+https://campus.uns.edu.pe/actuator/health,/actuator/health,200,HIGH,Endpoint de salud de Spring Boot,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:42,WSTG-CONF-04
+https://campus.uns.edu.pe/administrator/,/administrator/,200,HIGH,Panel de administración Joomla,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:45,WSTG-CONF-04
+https://campus.uns.edu.pe/wp-admin/,/wp-admin/,200,HIGH,Panel de administración WordPress,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:46,WSTG-CONF-04
+https://campus.uns.edu.pe/phpmyadmin/,/phpmyadmin/,200,HIGH,PHPMyAdmin — gestión de base de datos,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:47,WSTG-CONF-04
+https://campus.uns.edu.pe/manager/html,/manager/html,200,HIGH,Tomcat Manager expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:49,WSTG-CONF-04
+https://campus.uns.edu.pe/jmx-console/,/jmx-console/,200,HIGH,JBoss JMX Console expuesta,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:50,WSTG-CONF-04
+https://campus.uns.edu.pe/admin-console/,/admin-console/,200,HIGH,Consola de administración,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:51,WSTG-CONF-04
+https://campus.uns.edu.pe/swagger-ui/,/swagger-ui/,200,HIGH,Swagger UI alternativo,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:53,WSTG-CONF-04
+https://campus.uns.edu.pe/api-docs,/api-docs,200,HIGH,Documentación de API JSON/OpenAPI,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:53,WSTG-CONF-04
+https://campus.uns.edu.pe/v2/api-docs,/v2/api-docs,200,HIGH,Documentación Swagger v2,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:54,WSTG-CONF-04
+https://campus.uns.edu.pe/openapi.json,/openapi.json,200,HIGH,Especificación OpenAPI/Swagger expuesta,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:55,WSTG-CONF-04
+https://campus.uns.edu.pe/api/swagger.json,/api/swagger.json,200,HIGH,Swagger API docs,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:56,WSTG-CONF-04
+https://campus.uns.edu.pe/graphql,/graphql,200,HIGH,Endpoint GraphQL — verificar introspección habilitada,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:57,WSTG-CONF-04
+https://campus.uns.edu.pe/error.log,/error.log,200,HIGH,Log de errores expuesto — revela stack traces y rutas internas,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:58,WSTG-CONF-04
+https://campus.uns.edu.pe/access.log,/access.log,200,HIGH,Log de acceso — revela rutas y usuarios,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:03:59,WSTG-CONF-04
+https://campus.uns.edu.pe/logs/error.log,/logs/error.log,200,HIGH,Log de errores en directorio /logs,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:00,WSTG-CONF-04
+https://campus.uns.edu.pe/app/logs/application.log,/app/logs/application.log,200,HIGH,Log de aplicación,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:01,WSTG-CONF-04
+https://campus.uns.edu.pe/storage/logs/laravel.log,/storage/logs/laravel.log,200,HIGH,Log de Laravel expuesto,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:02,WSTG-CONF-04
+https://campus.uns.edu.pe/robots.txt,/robots.txt,200,HIGH,Robots.txt — puede revelar rutas sensibles,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:03,WSTG-CONF-04
+https://campus.uns.edu.pe/sitemap.xml,/sitemap.xml,200,HIGH,Sitemap — mapa completo del sitio,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:04,WSTG-CONF-04
+https://campus.uns.edu.pe/.htaccess,/.htaccess,403,INFO,Configuración Apache — puede contener restricciones y credenciales,Protegido (401/403) — Existe pero requiere autenticación,162,text/html,2026-10-11 01:04:04,WSTG-CONF-04
+https://campus.uns.edu.pe/crossdomain.xml,/crossdomain.xml,200,HIGH,Política de dominio cruzado Flash (legacy),ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:05,WSTG-CONF-04
+https://campus.uns.edu.pe/security.txt,/security.txt,200,HIGH,Política de seguridad de la organización,ACCESIBLE SIN AUTENTICACIÓN,670,text/plain,2026-10-11 01:04:06,WSTG-CONF-04
+https://campus.uns.edu.pe/.well-known/security.txt,/.well-known/security.txt,200,HIGH,Ubicación estándar de security.txt,ACCESIBLE SIN AUTENTICACIÓN,36664,text/html; charset=utf-8,2026-10-11 01:04:07,WSTG-CONF-04

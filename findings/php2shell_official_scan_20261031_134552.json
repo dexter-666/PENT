@@ -1,0 +1,52 @@
+{
+  "scan_date": "20261031_134552",
+  "results": [
+    {
+      "target": "https://sigea.uns.edu.pe/index.php/C_logueo/iniciar_session",
+      "tested_url": "https://sigea.uns.edu.pe/index.php/C_logueo/iniciar_session",
+      "verdict": "LIKELY",
+      "confidence": "MEDIUM",
+      "reason": "no crash observed, but the target advertises an unpatched release: PHP 7.1.33 (end-of-life, no upstream fix). Version data alone is not proof -- distro backports can carry the fix under the original version number.",
+      "signal": "none",
+      "sapi": "unknown",
+      "version": "PHP 7.1.33 (end-of-life, no upstream fix)",
+      "version_status": "EOL",
+      "error": null,
+      "elapsed_seconds": 3.7,
+      "bytes_sent": 22020135,
+      "post_max_size": null,
+      "probes": [
+        {
+          "index": 1,
+          "size_mib": 1,
+          "parts": 4000,
+          "status": 302,
+          "body_bytes": 0,
+          "signal": null,
+          "detail": "",
+          "error": null
+        },
+        {
+          "index": 2,
+          "size_mib": 4,
+          "parts": 2000,
+          "status": 302,
+          "body_bytes": 0,
+          "signal": null,
+          "detail": "",
+          "error": null
+        },
+        {
+          "index": 3,
+          "size_mib": 7,
+          "parts": 1200,
+          "status": 302,
+          "body_bytes": 0,
+          "signal": null,
+          "detail": "",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

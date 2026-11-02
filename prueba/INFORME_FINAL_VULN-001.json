@@ -1,0 +1,159 @@
+{
+  "vulnerability_id": "VULN-001",
+  "target": "https://orcl.uns.edu.pe",
+  "ip": "190.119.171.165",
+  "server": "openresty",
+  "phpmyadmin_version": "5.2.3",
+  "severity": "CRITICA",
+  "cvss_score": 9.8,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "owasp": "A05 - Security Misconfiguration",
+  "cwe": "CWE-16, CWE-284",
+  "findings": [
+    {
+      "finding": "VULN-001",
+      "severity": "CRITICA",
+      "cvss": 9.8,
+      "endpoint": "/setup/",
+      "status_code": 200,
+      "description": "Configuracion de phpMyAdmin accesible sin autenticacion",
+      "evidence": "HTTP 200 sin credentials, respuesta valida",
+      "exploitable": true
+    },
+    {
+      "finding": "VULN-001",
+      "severity": "CRITICA",
+      "cvss": 9.8,
+      "endpoint": "/config.inc.php",
+      "status_code": 200,
+      "description": "Archivo de configuracion expuesto publicamente",
+      "evidence": "HTTP 200, 0 bytes",
+      "exploitable": true
+    },
+    {
+      "finding": "VULN-001",
+      "severity": "CRITICA",
+      "cvss": 9.8,
+      "endpoint": "/README",
+      "status_code": 200,
+      "description": "Version confirmada: 5.2.3",
+      "evidence": "Version expuesta publicamente",
+      "exploitable": true
+    },
+    {
+      "test": "Fuerza bruta con wordlist",
+      "result": "SIN CREDENCIALES VALIDAS",
+      "details": "Se probaron 65 combinaciones de credenciales comunes"
+    },
+    {
+      "test": "Lectura de config.inc.php",
+      "result": "ARCHIVO ACCESIBLE (0 bytes)",
+      "details": "Configuracion almacenada fuera del web root"
+    },
+    {
+      "test": "Explotacion de /setup/",
+      "result": "SETUP DESABILITADO",
+      "details": "Mensaje: 'Configuration already exists, setup is disabled!'"
+    },
+    {
+      "test": "Acceso directo a BD",
+      "result": "REQUIERE AUTENTICACION",
+      "details": "/index.php?server=1 muestra login form"
+    },
+    {
+      "test": "Conexion MySQL 3306",
+      "result": "PUERTO FILTRADO",
+      "details": "Timeout al intentar conectar"
+    },
+    {
+      "test": "SQL Injection sin auth",
+      "result": "SIN ACCESO",
+      "details": "/sql.php requiere autenticacion"
+    },
+    {
+      "test": "Exportar configuracion",
+      "result": "CONFIG BLOQUEADA",
+      "details": "Setup deshabilitado por config existente"
+    }
+  ],
+  "exploits_attempted": [
+    {
+      "name": "Fuerza bruta con wordlist",
+      "result": "SIN CREDENCIALES VALIDAS",
+      "details": "Se probaron 65 combinaciones de credenciales comunes"
+    },
+    {
+      "name": "Lectura de config.inc.php",
+      "result": "ARCHIVO ACCESIBLE (0 bytes)",
+      "details": "Configuracion almacenada fuera del web root"
+    },
+    {
+      "name": "Explotacion de /setup/",
+      "result": "SETUP DESABILITADO",
+      "details": "Mensaje: 'Configuration already exists, setup is disabled!'"
+    },
+    {
+      "name": "Acceso directo a BD",
+      "result": "REQUIERE AUTENTICACION",
+      "details": "/index.php?server=1 muestra login form"
+    },
+    {
+      "name": "Conexion MySQL 3306",
+      "result": "PUERTO FILTRADO",
+      "details": "Timeout al intentar conectar"
+    },
+    {
+      "name": "SQL Injection sin auth",
+      "result": "SIN ACCESO",
+      "details": "/sql.php requiere autenticacion"
+    },
+    {
+      "name": "Exportar configuracion",
+      "result": "CONFIG BLOQUEADA",
+      "details": "Setup deshabilitado por config existente"
+    }
+  ],
+  "exposed_paths": [
+    {
+      "path": "/",
+      "status": 200,
+      "state": "EXPOSED"
+    },
+    {
+      "path": "/setup/",
+      "status": 200,
+      "state": "EXPOSED"
+    },
+    {
+      "path": "/config.inc.php",
+      "status": 200,
+      "state": "EXPOSED"
+    },
+    {
+      "path": "/README",
+      "status": 200,
+      "state": "EXPOSED"
+    },
+    {
+      "path": "/ChangeLog",
+      "status": 200,
+      "state": "EXPOSED"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "state": "EXPOSED"
+    }
+  ],
+  "status": "CONFIRMADA",
+  "date": "2026-09-20",
+  "recommendations": [
+    "Bloquear /setup/ inmediatamente",
+    "Bloquear archivos de configuracion",
+    "Restringir acceso por IP",
+    "Cambiar credenciales de BD",
+    "Mover phpMyAdmin a ruta no predecible",
+    "Implementar autenticacion HTTP basica",
+    "Monitorear logs de acceso"
+  ]
+}

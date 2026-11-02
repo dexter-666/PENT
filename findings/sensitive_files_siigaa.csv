@@ -1,0 +1,2 @@
+url,path,status_code,severity,description,note,content_length,content_type,timestamp,wstg_ref
+https://registro.uns.edu.pe/console,/console,302,INFO,Consola de administración web,Redirección a: /noredirect.html,0,,2026-09-20 08:59:39,WSTG-CONF-04

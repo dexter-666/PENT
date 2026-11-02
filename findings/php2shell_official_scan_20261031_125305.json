@@ -1,0 +1,32 @@
+{
+  "scan_date": "20261031_125305",
+  "results": [
+    {
+      "target": "https://campus.uns.edu.pe",
+      "tested_url": "https://campus.uns.edu.pe",
+      "verdict": "NOT_VULNERABLE",
+      "confidence": "NONE",
+      "reason": "no crash signal observed and the target does not advertise a PHP version. This is NOT proof of safety: a WAF, a proxy limit, or a hardened configuration can suppress the signal.",
+      "signal": "none",
+      "sapi": "unknown",
+      "version": null,
+      "version_status": null,
+      "error": null,
+      "elapsed_seconds": 0.92,
+      "bytes_sent": 10485804,
+      "post_max_size": null,
+      "probes": [
+        {
+          "index": 1,
+          "size_mib": 1,
+          "parts": 4000,
+          "status": 200,
+          "body_bytes": 36664,
+          "signal": null,
+          "detail": "",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

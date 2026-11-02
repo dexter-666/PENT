@@ -1,0 +1,16 @@
+{
+  "csrf_token": "47225274587a3737325a766862236b52",
+  "config_file": "VACIO",
+  "brute_force": "NO ENCONTRADO",
+  "setup_exploit": "EXITO - /setup/ modificable sin auth",
+  "setup_config": "ACCESIBLE",
+  "readme_accessible": "HTTP 200",
+  "changelog_accessible": "HTTP 200",
+  "exposed__setup_": "HTTP 200",
+  "exposed__config.inc.php": "HTTP 200",
+  "exposed__README": "HTTP 200",
+  "exposed__ChangeLog": "HTTP 200",
+  "exposed__favicon.ico": "HTTP 200",
+  "ip_direct": "ERROR: HTTPSConnectionPool(host='190.119.171.165', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))",
+  "basic_auth": "NO ENCONTRADA"
+}

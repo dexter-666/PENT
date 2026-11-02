@@ -1,0 +1,5 @@
+PHP2Shell Probe Results
+CVE-2026-109618 / CVE-2026-109619
+Date: 2026-10-25 02:55:08
+
+[WARN] [PROBE5] https://sigea.uns.edu.pe: Servidor inestable post-probe: HTTP 200

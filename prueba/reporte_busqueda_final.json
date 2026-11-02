@@ -1,0 +1,25 @@
+{
+  "empty_/config.inc.php": "HTTP 200 - EMPTY",
+  "auth_admin": "HTTP 200",
+  "auth_root": "HTTP 200",
+  "auth_pma": "HTTP 200",
+  "auth_uns": "HTTP 200",
+  "auth_": "HTTP 200",
+  "changelog_security": [
+    "- issue #19548 Fix missing tooltip in status monitor log table",
+    "- issue #19619 Fix horizontal scrollbar in server status pages",
+    "- issue #17141 Fix table comment readability on original theme",
+    "- issue #19351 Fixed paging with approximate number of rows",
+    "- issue #18170 Fixed `window.makeGrid is not a function` partially",
+    "- issue #17535 Fixed \"Delete\" button not asking for confirmation when deleting a row",
+    "- issue        Fixed not needed table names conversion to htmlentities when renaming a table",
+    "- issue #18903 Fix error 500 when simulating a `SET` statement",
+    "- issue #19404 Fixed PHP 8.4 deprecations in `thecodingmachine/safe`",
+    "- issue #19133 Updated documentation about Y2K38 as is fixed in MariaDB 11.5",
+    "- issue        Fixed some bugs in relations tab with foreign keys having special names",
+    "- issue #19715 Fix sorting with URL encryption enabled in results display",
+    "- issue        Fix duplicate Set-Cookie",
+    "- issue        Fix horizontal scrollbar in server status pages",
+    "- issue #19653 Fix body padding automatically using a MutationObserver"
+  ]
+}

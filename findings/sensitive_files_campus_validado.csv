@@ -1,0 +1,6 @@
+url,path,status_code,severity,description,note,content_length,content_type,timestamp,wstg_ref
+https://campus.uns.edu.pe/login/index.php,/login/index.php,200,INFO,Página de login del Campus Virtual (Moodle),"Entrar al sitio | CV-UNS — cookie MoodleSession (Secure; HttpOnly; sin SameSite)",35482,text/html,2026-10-11 01:03,WSTG-CONF-04
+https://campus.uns.edu.pe/security.txt,/security.txt,200,INFO,security.txt genérico de Moodle HQ,"Apunta a moodle.org/security/report — NO tiene contacto institucional UNS (ver INFO-002)",670,text/plain,2026-10-11 01:03,WSTG-CONF-04
+https://campus.uns.edu.pe/backup/,/backup/,403,INFO,Directorio protegido,"Existe pero requiere autenticación — no explotable",162,text/html,2026-10-11 01:03,WSTG-CONF-04
+https://campus.uns.edu.pe/.htaccess,/.htaccess,403,INFO,Configuración Apache protegida,"Bloqueado por el proxy OpenResty",162,text/html,2026-10-11 01:03,WSTG-CONF-04
+https://campus.uns.edu.pe/*.varias,45 rutas (/.git/config /backup.sql /phpmyadmin/ /actuator /swagger-ui/ /console /debug/ /error.log /robots.txt /sitemap.xml etc.),200,INFO,SOFT-404 — FALSOS POSITIVOS DESCARTADOS,"Todas responden 200 con la página principal de Moodle (36664 B, title 'Página Principal | CV-UNS') — validado con verify_soft404.py (ver INFO-002)",36664,text/html,2026-10-11 01:03,WSTG-CONF-04

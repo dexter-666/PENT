@@ -1,0 +1,6 @@
+url,status_code,grade,score,header,severity,status,description,current_value,wstg_ref
+https://campus.uns.edu.pe,200,D,44,Strict-Transport-Security,HIGH,❌ FALTANTE,HSTS — Fuerza conexiones HTTPS,,WSTG-CONF-06
+https://campus.uns.edu.pe,200,D,44,Content-Security-Policy,HIGH,❌ FALTANTE,CSP — Previene XSS e inyección de contenido,,WSTG-CONF-07
+https://campus.uns.edu.pe,200,D,44,X-Content-Type-Options,MEDIUM,❌ FALTANTE,Previene MIME sniffing,,WSTG-CONF-06
+https://campus.uns.edu.pe,200,D,44,Referrer-Policy,LOW,❌ FALTANTE,Controla información del Referer,,WSTG-CONF-07
+https://campus.uns.edu.pe,200,D,44,Permissions-Policy,LOW,❌ FALTANTE,"Controla APIs del navegador (cámara, micrófono, etc.)",,WSTG-CONF-07

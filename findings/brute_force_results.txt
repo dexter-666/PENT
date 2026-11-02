@@ -1,0 +1,7 @@
+phpMyAdmin Brute-Force Results
+Target: https://orcl.uns.edu.pe
+Date: 2026-10-25 02:35:10
+Credentials tested: 99
+Time: 49.8s
+
+No valid credentials found.

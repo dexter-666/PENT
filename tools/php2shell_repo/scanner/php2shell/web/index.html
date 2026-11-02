@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>php2shell — one punch</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div id="app" data-phase="idle" data-verdict="none">
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">拳</span>
+      <span class="brand-text">
+        <b>php2shell</b>
+        <i>CVE-2026-109618</i>
+      </span>
+    </div>
+    <div class="topbar-right">
+      <span class="conn" id="conn" data-state="idle"><i></i><span>idle</span></span>
+      <button class="ghost-btn" id="soundBtn" type="button" aria-pressed="true">sound on</button>
+      <a class="ghost-btn" href="#help" id="helpBtn">?</a>
+    </div>
+  </header>
+
+  <main class="stage" id="stage">
+    <div class="halftone" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="speedlines" id="speedlines" aria-hidden="true"></div>
+
+    <div class="ground" aria-hidden="true"><span class="ground-line"></span></div>
+
+    <!-- ── hero ─────────────────────────────────────────────────────── -->
+    <div class="hero-wrap" id="heroWrap" aria-hidden="true">
+      <div class="afterimages" id="afterimages"></div>
+      <svg id="hero" viewBox="0 0 300 340" role="img">
+        <defs>
+          <linearGradient id="suit" x1="0" y1="0" x2="0.6" y2="1">
+            <stop offset="0" stop-color="#ffe873"/>
+            <stop offset=".55" stop-color="#ffd23f"/>
+            <stop offset="1" stop-color="#eda321"/>
+          </linearGradient>
+          <linearGradient id="cape" x1="0" y1="0" x2="0.2" y2="1">
+            <stop offset="0" stop-color="#fffdf4"/>
+            <stop offset=".7" stop-color="#e8e0c9"/>
+            <stop offset="1" stop-color="#c9bfa4"/>
+          </linearGradient>
+          <linearGradient id="cape2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e6ddc6"/>
+            <stop offset="1" stop-color="#b3a98e"/>
+          </linearGradient>
+          <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffe3c2"/>
+            <stop offset="1" stop-color="#efc09a"/>
+          </linearGradient>
+          <linearGradient id="glove" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff3b4e"/>
+            <stop offset="1" stop-color="#b50f21"/>
+          </linearGradient>
+        </defs>
+
+        <ellipse class="hero-shadow" cx="150" cy="330" rx="66" ry="9"/>
+
+        <g id="heroBob">
+        <g id="heroPose">
+
+          <!-- cape, behind everything -->
+          <g id="capeGrp">
+            <path class="cape-back" d="M190,100 C150,90 114,96 96,114
+              C76,134 63,170 58,212 C53,252 60,288 74,314
+              C78,321 89,318 87,310 C79,282 82,248 92,218
+              C98,198 104,172 108,150 C112,128 124,110 142,104
+              C158,98 176,99 190,100 Z"/>
+            <path class="cape-fold" d="M150,106 C132,124 118,162 112,204
+              C107,240 110,276 120,304"/>
+            <path class="cape-fold" d="M120,112 C104,136 92,176 88,216
+              C84,250 88,282 98,308"/>
+          </g>
+
+          <!-- legs -->
+          <g id="legBack" class="leg">
+            <rect class="suit-limb" x="118" y="198" width="24" height="60" rx="12"/>
+            <rect class="suit-limb" x="119" y="250" width="22" height="56" rx="11"/>
+            <path class="boot" d="M117,298 h26 v14 a10,10 0 0 1 -10,10 h-8 a8,8 0 0 1 -8,-8 z"/>
+            <path class="boot-toe" d="M117,308 h32 a6,6 0 0 1 0,12 h-32 z"/>
+          </g>
+
+          <!-- upper body pivots at the hips -->
+          <g id="upperBody">
+            <g id="armBack" class="arm">
+              <rect class="suit-limb" x="109" y="110" width="18" height="54" rx="9"/>
+              <g id="foreBack" class="fore">
+                <rect class="suit-limb" x="110" y="158" width="16" height="42" rx="8"/>
+                <rect class="cuff" x="107" y="192" width="22" height="10" rx="5"/>
+                <circle class="fist" cx="118" cy="210" r="15"/>
+              </g>
+            </g>
+
+            <g id="torso">
+              <path class="torso-body" d="M112,106 C118,96 182,96 188,106
+                C195,118 197,150 195,176 C194,190 191,200 187,205
+                L113,205 C109,200 106,190 105,176 C103,150 105,118 112,106 Z"/>
+              <path class="torso-shade" d="M112,106 C118,96 182,96 188,106
+                C195,118 197,150 195,176 C194,190 191,200 187,205
+                L150,205 L150,98 Z" opacity=".14"/>
+              <rect class="belt" x="107" y="192" width="86" height="13" rx="4"/>
+              <rect class="buckle" x="142" y="189" width="17" height="18" rx="3"/>
+              <path class="zipper" d="M150,104 V192"/>
+            </g>
+
+            <g id="head">
+              <rect class="neck" x="139" y="86" width="22" height="24" rx="6"/>
+              <circle class="skull" cx="150" cy="66" r="31"/>
+              <path class="head-shine" d="M126,50 C132,36 152,31 168,38" />
+              <ellipse class="ear" cx="128" cy="72" rx="5" ry="7"/>
+              <g class="face">
+                <path class="brow" d="M139,58 l12,3"/>
+                <path class="brow" d="M161,61 l12,-3"/>
+                <ellipse class="eye" cx="146" cy="67" rx="3.4" ry="5.4"/>
+                <ellipse class="eye" cx="166" cy="67" rx="3.4" ry="5.4"/>
+                <path class="nose" d="M169,74 l5,6"/>
+                <path class="mouth" d="M158,86 h12"/>
+              </g>
+            </g>
+
+            <g id="armFront" class="arm">
+              <rect class="suit-limb" x="173" y="110" width="18" height="54" rx="9"/>
+              <g id="foreFront" class="fore">
+                <rect class="suit-limb" x="174" y="158" width="16" height="42" rx="8"/>
+                <rect class="cuff" x="171" y="192" width="22" height="10" rx="5"/>
+                <circle class="fist" cx="182" cy="210" r="16"/>
+                <circle class="fist-shine" cx="177" cy="205" r="5"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- front leg -->
+          <g id="legFront" class="leg">
+            <rect class="suit-limb" x="158" y="198" width="24" height="60" rx="12"/>
+            <rect class="suit-limb" x="159" y="250" width="22" height="56" rx="11"/>
+            <path class="boot" d="M157,298 h26 v14 a10,10 0 0 1 -10,10 h-8 a8,8 0 0 1 -8,-8 z"/>
+            <path class="boot-toe" d="M157,308 h32 a6,6 0 0 1 0,12 h-32 z"/>
+          </g>
+
+        </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ── target ───────────────────────────────────────────────────── -->
+    <div class="target-wrap" id="targetWrap">
+      <div class="target-card" id="card" data-state="idle">
+        <div class="card-scan" aria-hidden="true"></div>
+        <div class="card-head">
+          <span class="card-dot" aria-hidden="true"></span>
+          <span class="card-label">TARGET</span>
+          <span class="card-status" id="cardStatus">idle</span>
+        </div>
+        <div class="card-url" id="cardUrl">no target</div>
+        <div class="card-meta" id="cardMeta">enter a URL below</div>
+        <div class="card-probes" id="cardProbes"></div>
+        <div class="card-stamp" id="cardStamp" aria-hidden="true"></div>
+      </div>
+      <div class="fragments" id="fragments" aria-hidden="true"></div>
+    </div>
+
+    <!-- ── impact fx ────────────────────────────────────────────────── -->
+    <div class="fx" id="fx" aria-hidden="true">
+      <div class="flash"></div>
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <svg class="impact-star" viewBox="0 0 200 200">
+        <path d="M100 0 L117 68 L180 28 L144 92 L200 100 L144 108 L180 172
+                 L117 132 L100 200 L83 132 L20 172 L56 108 L0 100 L56 92
+                 L20 28 L83 68 Z"/>
+      </svg>
+    </div>
+
+    <div class="dust" id="dust" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <div class="bubble" id="bubble" role="status">
+      <span id="bubbleText"></span>
+    </div>
+
+    <!-- ── console ──────────────────────────────────────────────────── -->
+    <section class="console">
+      <form class="scan-form" id="scanForm" autocomplete="off">
+        <span class="prompt" aria-hidden="true">$</span>
+        <input id="urlInput" name="target" type="text" spellcheck="false"
+               placeholder="https://example.com" aria-label="target URL">
+        <button id="scanBtn" type="submit">PUNCH</button>
+      </form>
+      <div class="log" id="log" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- ── verdict panel ──────────────────────────────────────────────── -->
+  <aside class="verdict" id="verdictPanel" hidden aria-live="polite">
+    <div class="verdict-head">
+      <span class="verdict-kicker">verdict</span>
+      <span class="verdict-label" id="vLabel">—</span>
+      <span class="verdict-conf" id="vConf">—</span>
+    </div>
+    <dl class="verdict-grid">
+      <div><dt>version</dt><dd id="vVersion">—</dd></div>
+      <div><dt>signal</dt><dd id="vSignal">—</dd></div>
+      <div><dt>elapsed</dt><dd id="vElapsed">—</dd></div>
+      <div><dt>sent</dt><dd id="vSent">—</dd></div>
+    </dl>
+    <p class="verdict-reason" id="vReason"></p>
+    <p class="verdict-caveat" id="vCaveat" hidden></p>
+    <div class="verdict-actions">
+      <button class="ghost-btn" id="againBtn" type="button">again</button>
+      <button class="ghost-btn" id="closeVerdict" type="button">close</button>
+    </div>
+  </aside>
+
+  <!-- ── help ───────────────────────────────────────────────────────── -->
+  <div class="help" id="help" hidden>
+    <div class="help-card">
+      <h2>how this works</h2>
+      <p>The hero only throws a punch when the scanner has a
+        <b>behavioural signal</b> — a crash observed on the target, not a
+        version string. Anything else and he pulls the punch.</p>
+      <ul>
+        <li><b>VULNERABLE</b> — card shatters. A crash signal fired.</li>
+        <li><b>LIKELY</b> — card shatters, but the evidence is version data only.</li>
+        <li><b>FIXED / NO SIGNAL</b> — "not punchable". Absence of a signal is
+          not proof of safety.</li>
+        <li><b>INCONCLUSIVE / ERROR</b> — he never reaches the target.</li>
+      </ul>
+      <p class="help-warn">Scanning triggers memory exhaustion and can crash a
+        PHP worker. Only scan systems you own or have permission to test.</p>
+      <button class="ghost-btn" id="closeHelp" type="button">got it</button>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">The UI needs JavaScript. The CLI still works:
+    <code>./scan -u URL</code></p></noscript>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
