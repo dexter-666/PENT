@@ -1,16 +1,13 @@
 # README —  Auditoría de Seguridad Web UNS
 
-> **⚠️ ADVERTENCIA**: Este proyecto fue realizado con autorización formal de la Vicerrectoría  
-> y el Grupo de Ingeniería de Seguridad de la Universidad Nacional del Santa (UNS).  
-> Las herramientas aquí incluidas son para uso académico y de investigación autorizada.
-
+> 
 ---
 
-## 🎯 Objetivo del Proyecto
+##  Objetivo del Proyecto
 
 Realizar una auditoría de seguridad web sobre el ecosistema digital de la **Universidad Nacional del Santa (UNS)** — especialmente el sistema **SIIGAA** (`registro.uns.edu.pe`) — para identificar vulnerabilidades, concientizar sobre el estado de la seguridad institucional, y presentar los hallazgos como producto de tesis.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 plan te pent/
@@ -36,7 +33,7 @@ plan te pent/
 
 ---
 
-## 🚀 Cómo Ejecutar las Herramientas
+##  Cómo Ejecutar las Herramientas
 
 ### Instalación de dependencias
 ```bash
@@ -76,7 +73,7 @@ python tools/sensitive_files_scanner.py --base-url https://registro.uns.edu.pe -
 
 ---
 
-## 📋 Flujo de Trabajo Recomendado
+##  Flujo de Trabajo Recomendado
 
 ```
 1. Ejecutar recon_subdomains.py    → Obtener inventario de activos
@@ -89,7 +86,7 @@ python tools/sensitive_files_scanner.py --base-url https://registro.uns.edu.pe -
 
 ---
 
-## 📚 Referencias
+##  Referencias
 
 - [OWASP WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/)
 - [OWASP Top 10 — 2021](https://owasp.org/Top10/)
